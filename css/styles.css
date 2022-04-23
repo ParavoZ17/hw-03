@@ -52,7 +52,7 @@ margin-right: auto;
 
 /* ------------------------------------------------------Header------------------------------------------------*/
 .header {
-    width: 1600px;
+    max-width: 1600px;
     border-bottom-width: 1px;   
     border-bottom-style: solid;
     border-bottom-color: #ECECEC;
@@ -123,7 +123,7 @@ margin-right: auto;
 /* -------------------------------- hero main------------------------------------- */
 
 .hero {
-    Width: 1600px;
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     margin-left: auto;
@@ -150,6 +150,8 @@ margin-right: auto;
 }
 
 .button {
+    width: 200px;
+    padding: 10px 32px;
     color: var(--main);
     background-color: var(--akcent-text-color);
     font-family: 'Roboto';
@@ -159,6 +161,9 @@ margin-right: auto;
     line-height: 1.88;
     cursor: pointer;
     border-radius: 4px;
+    border: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
     }
 
 /* -----------------------------section-------------------------------- */
@@ -177,8 +182,13 @@ margin-right: auto;
 
 .section {
     color: var(--prymary-text-color);
+    background-color: #ffffff;
     padding-bottom: 94px;
 }
+.section.section-team{
+    background-color:#F5F4FA;
+}
+
 .benefits {
     padding-bottom: 94px;
     padding-top: 94px
@@ -193,20 +203,24 @@ margin-right: auto;
     color: var(--secondary-text-color);}
 
 .section-title {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;  
     letter-spacing: 0.03em;
-    text-transform: uppercase;
+    
 }
+.h{text-transform: uppercase;}  
  .skills {display: flex;
    
 } 
-
-/* .img-benefits, .part-team {
-    margin-right: 30px; 
-}*/
+img{
+    display:block;
+    height:auto;
+    width:100%;
+}
+.part-team {background-color: #ffffff;}
 
 .img-benefits:not(:last-child), .part-team:not(:last-child) {margin-right: 30px;}
 
@@ -221,9 +235,10 @@ justify-content: space-between;
 /* .list-items:nth-child(4n) */
 
 .team {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.67;
+    line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;}
 
@@ -242,7 +257,7 @@ justify-content: space-between;
     letter-spacing: 0.03em;}
 
 .text-team {
-    margin-bottom: 30px;
+    /*   */
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19px;
@@ -251,8 +266,9 @@ justify-content: space-between;
     color: var(--secondary-text-color);
     }
 
-.foto-team {margin-bottom: 30px;}
-
+/* .foto-team {margin-bottom: 30px;} */
+.part-team-description {padding-bottom: 30px;
+padding-top: 30px;}
 
 /*---------------------------------footer------------------------------- */
 footer {
@@ -289,13 +305,13 @@ margin-right: auto;}
 
 .address, .address-mail {margin-bottom: 9px;}
 
-
+.list-addres {font-style: normal;}
     /* ----------------portfolio-------------------- */
 /* ---------------------------------------buttons------------------------------- */
 .button-portfolio {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.88;
     display: flex;
@@ -336,7 +352,7 @@ margin-right: auto;}
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .button-portfolio-item:not(:last-child) {margin-right: 8px;}
@@ -358,12 +374,13 @@ margin-bottom: 30px;}
 .item:nth-last-child(-n+3) {
     margin-bottom: 0px;
 }
-.example {display: block;}
+/* .example {display: block;} */
 
 .discription-examples{
     padding-top: 20px;
     padding-left: 24px;
-    padding-right: 24px;    
+    padding-right: 24px; 
+    padding-bottom: 20px;   
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
