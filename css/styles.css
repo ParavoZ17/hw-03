@@ -120,6 +120,12 @@ justify-content: center}
 }
 .link.current {
     color: var(--akcent-text-color);}
+    
+.tilibom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
 /* -------------------------------- hero main------------------------------------- */
 
@@ -392,7 +398,4 @@ margin-right: auto;}
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE; */
 }
-.tilibom{
-    display: flex;
-   ;
-}
+
